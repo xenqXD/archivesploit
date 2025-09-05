@@ -6,6 +6,7 @@
   <title>archivesploit</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", () => {
     const buttons = document.querySelectorAll(".download-btn");
@@ -13,10 +14,10 @@
     buttons.forEach(button => {
       button.addEventListener("mouseenter", () => {
         confetti({
-          particleCount: 30,
-          spread: 30,
-          scalar: 0.9,
-          startVelocity: 20,
+          particleCount: 30,      // fewer particles
+          spread: 30,             // less wide
+          scalar: 0.9,            // smaller particles
+          startVelocity: 20,      // softer burst
           origin: {
             x: (button.getBoundingClientRect().left + button.offsetWidth / 2) / window.innerWidth,
             y: (button.getBoundingClientRect().top + button.offsetHeight / 2) / window.innerHeight
@@ -26,12 +27,13 @@
     });
   });
 </script>
+
 <body>
   <nav>
     <ul>
-      <li><a href="https://xenqxd.github.io/archivesploit/">archivesploit</a></li>
-      <li><a href="https://xenqxd.github.io/archivesploit/orc.html">orc stuff</a></li>
-      <li><a href="https://xenqxd.github.io/archivesploit/">normal stuff</a></li>
+      <li><a href="#">archivesploit</a></li>
+      <li><a href="#">orc stuff</a></li>
+      <li><a href="#">normal stuff</a></li>
       <li><a href="https://discord.gg/fPP3V4RTQF">disc server</a></li>
     </ul>
   </nav>
@@ -46,9 +48,11 @@
         <div class="text">
           <h3>Zenith</h3>
           <p>paid but great, level 8 100% unc + decompiler</p>
+		  <p class="status undetected">status: undetected</p> <!-- green -->
         </div>
       </div>
 
+      <!-- CARD 2 -->
       <div class="card">
         <div class="left">
           <img src="https://avatars.githubusercontent.com/u/210111430?s=200&v=4" class="icon" alt="icon">
@@ -57,6 +61,7 @@
         <div class="text">
           <h3>Solara</h3>
           <p>51 unc ig dtc but good for a free one</p>
+		  <p class="status detected">status: detected</p> <!-- green -->
         </div>
       </div>
 
@@ -69,6 +74,7 @@
         <div class="text">
           <h3>Wave</h3>
           <p>has ai, level 8 ig. uhh idk</p>
+		  <p class="status detected">status: unknown</p> <!-- green -->
         </div>
       </div>
 
@@ -81,6 +87,7 @@
         <div class="text">
           <h3>Aetheris Serverside</h3>
           <p>i love aetheris chan</p>
+		  <p class="status undetected">status: undetected</p> <!-- green -->
         </div>
       </div>
     </div>
@@ -95,6 +102,7 @@
         <div class="text">
           <h3>Xeno</h3>
           <p>ig the best free exec ngl</p>
+		  <p class="status undetected">status: unknown, probably ud</p> <!-- green -->
         </div>
       </div>
 	  
@@ -107,6 +115,7 @@
         <div class="text">
           <h3>KRNL</h3>
           <p>mobile, key sys but vng support</p>
+		  <p class="status detected">status: detected</p> <!-- green -->
         </div>
       </div>
     </div>
