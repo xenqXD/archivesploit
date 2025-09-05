@@ -6,6 +6,26 @@
   <title>archivesploit</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const buttons = document.querySelectorAll(".download-btn");
+
+    buttons.forEach(button => {
+      button.addEventListener("mouseenter", () => {
+        confetti({
+          particleCount: 30,      // fewer particles
+          spread: 30,             // less wide
+          scalar: 0.9,            // smaller particles
+          startVelocity: 20,      // softer burst
+          origin: {
+            x: (button.getBoundingClientRect().left + button.offsetWidth / 2) / window.innerWidth,
+            y: (button.getBoundingClientRect().top + button.offsetHeight / 2) / window.innerHeight
+          }
+        });
+      });
+    });
+  });
+</script>
 <body>
   <nav>
     <ul>
