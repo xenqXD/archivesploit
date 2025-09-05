@@ -13,10 +13,10 @@
     buttons.forEach(button => {
       button.addEventListener("mouseenter", () => {
         confetti({
-          particleCount: 30,      // fewer particles
-          spread: 30,             // less wide
-          scalar: 0.9,            // smaller particles
-          startVelocity: 20,      // softer burst
+          particleCount: 30,
+          spread: 30,
+          scalar: 0.9,
+          startVelocity: 20,
           origin: {
             x: (button.getBoundingClientRect().left + button.offsetWidth / 2) / window.innerWidth,
             y: (button.getBoundingClientRect().top + button.offsetHeight / 2) / window.innerHeight
