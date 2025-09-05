@@ -124,7 +124,7 @@ main {
 }
 
 .status {
-  margin-top: 111px; 
+  margin-top: 111px;
   margin-bottom: 111px; 
   padding-top: 8px;
   padding-bottom: 8px;
@@ -132,16 +132,16 @@ main {
   font-weight: bold;
   font-family: 'Courier New', Courier, monospace;
   text-transform: uppercase;
-  line-height: 1.3; 
+  line-height: 1.3;
 }
 
 
 .status.undetected {
-  color: #00ff88;
+  color: #00ff88; /* green */
 }
 
 .status.detected {
-  color: #ff5555;
+  color: #ff5555; /* red */
 }
 
 * {
